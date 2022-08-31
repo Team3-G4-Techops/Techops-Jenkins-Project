@@ -14,5 +14,12 @@ pipeline {
 					sh 'sudo systemctl status jenkins'			
 				}
 			}
+			stage('3-systemcheck-constance'){
+				steps{
+					sh 'ps -ef'
+					sh 'sudo systemctl status jenkins'
+					sh 'date'
+				}
+			}
 		}
 }
