@@ -14,6 +14,7 @@ pipeline {
 					sh 'sudo systemctl status jenkins'
 				        sh 'date'
 					sh 'cal 2032'
+					sh 'lscpu'
 				}
 			}
 		}
