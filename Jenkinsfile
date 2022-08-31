@@ -11,11 +11,7 @@ pipeline {
 			stage('2-systemcheck-roger'){
 				steps{
 					sh 'ps -ef'
-					sh 'sudo systemctl status jenkins'
-				        sh 'date'
-					sh 'cal 2032'
-					sh 'lscpu'
-					echo "Eng Sihabile"
+					sh 'sudo systemctl status jenkins'			
 				}
 			}
 		}
