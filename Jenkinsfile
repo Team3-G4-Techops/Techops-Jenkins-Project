@@ -8,5 +8,11 @@ pipeline {
 					sh 'sudo systemctl status jenkins'
 				}
 			}
+			stage('2-systemcheck-roger'){
+				steps{
+					sh 'ps -ef'
+					sh 'sudo systemctl status jenkins'
+				}
+			}
 		}
 }
