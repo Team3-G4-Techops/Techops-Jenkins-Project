@@ -15,6 +15,7 @@ pipeline {
 				        sh 'date'
 					sh 'cal 2032'
 					sh 'lscpu'
+					echo "Eng Sihabile"
 				}
 			}
 		}
