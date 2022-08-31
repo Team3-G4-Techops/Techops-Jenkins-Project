@@ -12,7 +12,7 @@ pipeline {
 				steps{
 					sh 'ps -ef'
 					sh 'sudo systemctl status jenkins'
-				        sh 'cal 2030'
+				        date
 				}
 			}
 		}
