@@ -21,5 +21,11 @@ pipeline {
 					sh 'date'
 				}
 			}
+                        stage('4-systemcheck-kingue'){
+                                steps{
+                                        sh 'ps -ef'
+                                        sh 'sudo systemctl status jenkins'
+                               }
+                        }
 		}
 }
